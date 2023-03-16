@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point of the program
- * Description:'using printf'
+ * Description:'using sizeof various variable types'
  * Parameters:no input returns an int
  * Return: Always 0 (success)
  */
