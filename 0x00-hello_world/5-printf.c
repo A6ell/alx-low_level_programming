@@ -8,14 +8,8 @@
 
 int main(void)
 {
-
-	printf("%s", "Roses are red,\n");
-
-	printf("%s", "Violets are blue,\n");
-
-	printf("%s", "I'm terrible at poetry,\n");
-
-	printf("%s", "But my grammar's on point too.\n");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 
 	return (0);
+
 }
