@@ -3,6 +3,7 @@
  * _islower - Entry point
  * Description: 'checking if an alphabet is lowercase'
  * Parameters: int 'c' - input to the function
+ * @c: the character to check
  * Return: 1 if lowercase 0 otherwise
  */
 int _islower(int c)
