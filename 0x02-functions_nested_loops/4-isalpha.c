@@ -3,6 +3,7 @@
  * _isalpha - Entry point
  * Description: 'checking if an alphabet or not'
  * Parameters: int 'c' description : 'input to the function'
+ * @c: the character to check
  * Return: 1 if alphabet 0 otherwise
  */
 int _isalpha(int c)
