@@ -3,7 +3,7 @@
  * _abs - Entry point
  * Description: 'printing absolute value of a number'
  * Parameters: input int n: 'number input to be converted'
- * @c: the character to check
+ * @n: the character to check
  * Return: absolute value of n
  */
 int _abs(int n)

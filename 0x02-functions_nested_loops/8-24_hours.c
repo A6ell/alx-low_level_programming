@@ -2,7 +2,6 @@
 /**
  * jack_bauer - Entry point
  * Description: 'printing every minute of the day'
- * @c: the character to check
  * Parameters: no input
  * Return: no return value
  */
