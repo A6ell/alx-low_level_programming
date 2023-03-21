@@ -1,11 +1,10 @@
 #include "main.h"
+
 /**
- * print_last_digit - Entry point
- * Description: 'printing last digit of a number'
- * Parameters: input int n:
- * @n: the character to check
- * Parameter Description 'number input to be converted'
- * Return: last digit of n
+ * print_last_digit - Prints the last digit of a number
+ * @n: The number to check
+ *
+ * Return: The last digit of n
  */
 int print_last_digit(int n)
 {
@@ -20,5 +19,5 @@ int print_last_digit(int n)
 		last_digit = n % 10;
 	}
 	_putchar('0' + last_digit);
-	return (last_digit);
+	return last_digit;
 }
