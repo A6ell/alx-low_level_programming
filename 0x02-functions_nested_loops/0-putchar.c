@@ -1,15 +1,14 @@
+#include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point of the program
- * Description:'using printf'
- * Parameters:no input returns an int
- * Return: Always 0 (success)
+ * main - Entry point
+ * Description: 'printing using putchar'
+ * Parameters: no input returns an int
+ * Return: Always 0 (Success)
  */
-
-#include "main.h"
-
 int main(void)
 {
 	printf("_putchar\n");
+
 	return (0);
 }
