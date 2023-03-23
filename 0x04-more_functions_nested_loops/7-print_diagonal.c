@@ -2,7 +2,7 @@
 
 /**
  *print_diagonal - is a function that prints numbers
- *@n: number of lines
+ *@n: number of diagonals
  *Return: the list of numbers in new line
  */
 
