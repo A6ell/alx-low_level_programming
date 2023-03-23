@@ -1,42 +1,31 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point
- * Description: 'fizz buzz test'
- * Parameters: no input int return
- * Return: 0 for success
+ * print_triangle - Entry point
+ * Description: 'printing a triangle using puts'
+ * Parameters: int size input no return
+ * @size : size of triangle
+ * Return: none
  */
-int main(void)
+void print_triangle(int size)
 {
 	int i;
+	int j;
+	int k;
 
-	for (i = 0; i < 100; i++)
+	if (size <= 0)
 	{
-		if (((i + 1) % 3 == 0) && ((i + 1) % 5 != 0))
-		{
-			printf("Fizz ");
-			continue;
-		}
-		else if (((i + 1) % 5 == 0) && ((i + 1) % 3 != 0))
-		{
-			if (i + 1 == 100)
-				printf("Buzz");
-			else
-			{
-				printf("Buzz ");
-				continue;
-			}
-		}
-		else if (((i + 1) % 5 == 0) && ((i + 1) % 3 == 0))
-		{
-			printf("FizzBuzz ");
-			continue;
-		}
-		else
-		{
-			printf("%i ", i + 1);
-		}
+		putchar('\n');
 	}
-	printf("\n");
-	return (0);
+	for (i = 0; i < size; i++)
+	{
+		for (k = (size - 1) - i; k > 0; k--)
+		{
+			putchar(' ');
+		}
+		for (j = 0; j < i + 1; j++)
+		{
+			putchar('#');
+		}
+		putchar('\n');
+	}
 }
