@@ -26,13 +26,14 @@ int main(void)
 			}
 	else
 	{
-		printf("Buzz ")
+		printf("Buzz ");
 	}
 		}
 		else
 		{
 			printf("%d ", i);
 		}
+	}
 	printf("\n");
 	return (0);
 }
