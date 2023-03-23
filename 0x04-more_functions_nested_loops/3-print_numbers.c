@@ -6,7 +6,7 @@
  *Return: the list of numbers in new line
  */
 
-void print_numbers()
+void print_numbers(void)
 {
 	int i;
 
