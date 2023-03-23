@@ -1,32 +1,42 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- *print_triangle - is a function that prints numbers
- *@size: number of lines
- *Return: the list of numbers in new line
+ * main - Entry point
+ * Description: 'fizz buzz test'
+ * Parameters: no input int return
+ * Return: 0 for success
  */
-
-void print_triangle(int size)
+int main(void)
 {
-	int i, j, k;
+	int i;
 
-	if (size <= 0)
+	for (i = 0; i < 100; i++)
 	{
-		_putchar('\n');
-		return;
-	}
-
-	for (i = 0; i < size; i++)
-
-	{
-		for (k = size - 1 - i; k > 0; k--)
-		_putchar(' ');
-	}
-	{
-		for (j = 1; j <= i; j++)
+		if (((i + 1) % 3 == 0) && ((i + 1) % 5 != 0))
 		{
-			_putchar('#');
+			printf("Fizz ");
+			continue;
 		}
-		_putchar('\n');
+		else if (((i + 1) % 5 == 0) && ((i + 1) % 3 != 0))
+		{
+			if (i + 1 == 100)
+				printf("Buzz");
+			else
+			{
+				printf("Buzz ");
+				continue;
+			}
+		}
+		else if (((i + 1) % 5 == 0) && ((i + 1) % 3 == 0))
+		{
+			printf("FizzBuzz ");
+			continue;
+		}
+		else
+		{
+			printf("%i ", i + 1);
+		}
 	}
+	printf("\n");
+	return (0);
 }
