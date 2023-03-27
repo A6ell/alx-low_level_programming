@@ -7,21 +7,17 @@
  */
 void puts_half(char *str)
 {
-    int length = 0;
-    int i;
+	int length = 0;
 
-    /* Determine the length of the string */
-    while (str[length] != '\0')
-    {
-        length++;
-    }
+	int i;
 
-    /* Print the second half of the string */
-    for (i = (length + 1) / 2; i < length; i++)
-    {
-        _putchar(str[i]);
-    }
-
-    /* Print a new line */
-    _putchar('\n');
+	while (str[length] != '\0')
+	{
+		length++;
+	}
+	for (i = (length + 1) / 2; i < length; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
