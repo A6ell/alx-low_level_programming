@@ -6,20 +6,17 @@
 
 void rev_string(char *s)
 {
-	int length = 0;
 	char *start = s;
 	char *end = s;
-	char tmp;
 
-	while (*end != '\0')
+	while (*end)
 	{
-		length++;
 		end++;
 	}
 	end--;
 	while (start < end)
 	{
-		tmp = *start;
+		char tmp = *start;
 		*start = *end;
 		*end = tmp;
 		start++;
