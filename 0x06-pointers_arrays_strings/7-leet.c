@@ -1,30 +1,31 @@
 /**
- * leet - encodes a string into 1337
- * @str: string to encode
- * Return: encoded string
+ * leet - replaces certain characters in a string with leet (1337) equivalents
+ *
+ * @str: the string to modify
+ *
+ * Return: a pointer to the modified string
  */
+
 char *leet(char *str)
 {
-	char *s = str;
-	char leet[] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
-	char normal[] = {'0', '1', '2', '3', '4', '5', '6', '7'};
 	int i, j;
 
-	while (*s)
+	char *leet_str = str;
+
+	char *letters = "aAeEoOtTlL";
+
+	char *leet_chars = "4433007711";
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		i = 0;
-		j = 0;
-		while (leet[i])
+		for (j = 0; letters[j] != '\0'; j++)
 		{
-			if (*s == leet[i] || *s == (leet[i] + 32))
+			if (str[i] == letters[j])
 			{
-				*s = normal[j];
+				leet_str[i] = leet_chars[j];
 				break;
 			}
-			i++;
-			j++;
 		}
-		s++;
 	}
-	return str;
+	return (leet_str);
 }
