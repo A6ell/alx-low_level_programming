@@ -1,8 +1,8 @@
 #include <string.h>
-/*
+/**
  * reverse_array - takes an array of integers
- * @param a: pointer to the first element of the array
- * @param n: number of elements in the array
+ * @a: pointer to the first element of the array
+ * @n: number of elements in the array
  */
 
 void reverse_array(int *a, int n)
