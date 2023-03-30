@@ -1,32 +1,32 @@
+#include "main.h"
 /**
- * rot13 - rotated aplphabet
- * @s: The string to encode.
- * Return: A pointer to the encoded string
+ * rot13 - Entry point
+ * Description: 'encoding a string using rot13'
+ * Parameters: char input returns a char
+ * @str: char input
+ * Return: Always 0 (Success)
  */
 
-char *rot13(char *s)
+char *rot13(char *str)
 {
 	int i, j;
 
-	char *result = s;
+	char *leet_str = str;
 
-	char *rot = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char *letters = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
 
-	for (i = 0; *(s + i); i++)
+	char *leet_chars = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j < 52; j++)
+		for (j = 0; letters[j] != '\0'; j++)
 		{
-			if (*(s + i) == *(rot + j))
+			if (str[i] == letters[j])
 			{
-				*(result + i) = *(rot + j);
-				break;
-			}
-			else if (*(s + i) == *(rot + j + 26))
-			{
-				*(result + i) = *(rot + j + 26);
+				leet_str[i] = leet_chars[j];
 				break;
 			}
 		}
 	}
-	return (result);
+	return (leet_str);
 }
