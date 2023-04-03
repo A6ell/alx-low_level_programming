@@ -1,23 +1,24 @@
 #include "main.h"
 /**
  * _memset - Entry point
- * Description: 'replacing certain memories with smt'
- * Parameters: two char and one int inputs
+ * Description: 'replacing'
+ * Parameters: two char
  * @s: input 1
  * @b: input 2
- * @n: int input
- * Return: char modified
+ * @n: int in
+ * Return: char that has
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
-
-	char *result;
+	char *final;
 
 	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
 	}
-	result = s;
-	return (result);
+	final = s;
+
+	return (final);
 }
