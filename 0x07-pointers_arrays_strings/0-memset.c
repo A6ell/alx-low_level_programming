@@ -3,6 +3,7 @@
  * @s: pionter
  * @b: char
  * @n: int
+ * Return: s
 */
 
 char *_memset(char *s, char b, unsigned int n)
