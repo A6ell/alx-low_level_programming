@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * _memset - Entry point
- * Description: 'replacing'
- * Parameters: two char
- * @s: input 1
- * @b: input 2
- * @n: int in
- * Return: char that has
+ * _memset - Entry
+ * Description: 'replacing memories with smt'
+ * Parameters: returns a char
+ * @s: char 1
+ * @b: char 2
+ * @n: input
+ * Return: char  modified
  */
 
 char *_memset(char *s, char b, unsigned int n)
