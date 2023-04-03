@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _memset - Set memory
  * Description: 'replace with smt'
