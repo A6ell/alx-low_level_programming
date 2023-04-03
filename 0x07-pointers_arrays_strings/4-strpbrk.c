@@ -1,3 +1,4 @@
+#include <stddef.h>
 /**
  * _strpbrk - function
  * This function searches a string for any of a set of bytes.
