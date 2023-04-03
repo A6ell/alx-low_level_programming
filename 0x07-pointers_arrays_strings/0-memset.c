@@ -2,11 +2,11 @@
 /**
  * _memset - Entry point
  * Description: 'replacing certain memories with smt'
- * Parameters: two char and one int inputs returns a char
- * @s: char input 1
- * @b: char input 2
+ * Parameters: two char and one int inputs
+ * @s: input 1
+ * @b: input 2
  * @n: int input
- * Return: char that has been modified
+ * Return: char modified
  */
 char *_memset(char *s, char b, unsigned int n)
 {
