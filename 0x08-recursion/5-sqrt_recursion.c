@@ -11,8 +11,5 @@ int _sqrt_recursion(int n)
         return (-1);
     if (n == 0 || n == 1)
         return (n);
-    return (_sqrt_helper(n, 1));
+    return (_sqrt_recursion(n));
 }
-/**
- * _sqrt_helper - Helps to find the natural square root of a number.
- * @n: The number to calculate the squar
