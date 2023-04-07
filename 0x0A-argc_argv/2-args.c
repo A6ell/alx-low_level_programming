@@ -1,10 +1,11 @@
 /**
  * main - prints out every argument user inputs
- * argv: prints out strings of input
- * argc: counts the number of input
- * @i: integer
+ * @argv: prints out strings of input
+ * @argc: counts the number of input
+ * Return: 0
  */
 
+#include <stdlib.h>
 #include <stdio.h>
 int main(int argc, char *argv[])
 {
