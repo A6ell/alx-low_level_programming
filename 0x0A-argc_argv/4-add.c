@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-int check_digit(char b[]);
 /**
  * main - function
  * @argc: count
