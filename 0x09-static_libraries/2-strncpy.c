@@ -1,3 +1,4 @@
+#include "main.h"
 #include <string.h>
 /**
  * _strncpy - Copy a string up to a specified number of characters
