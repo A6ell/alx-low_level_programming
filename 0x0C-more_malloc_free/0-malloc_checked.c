@@ -17,4 +17,5 @@ exit(98);
 }
 
 return (p);
+free(s);
 }
