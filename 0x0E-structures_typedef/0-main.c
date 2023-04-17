@@ -1,3 +1,6 @@
+/**
+ * Struct dog - a structure representing a dog with a name, age, and owner.
+ */
 #include <stdio.h>
 #include "dog.h"
 
