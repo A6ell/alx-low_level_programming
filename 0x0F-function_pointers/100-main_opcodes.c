@@ -1,5 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+/**
+* print_opcodes - Prints the opcodes of a memory location
+*
+* @ptr: Pointer to the memory location to print.
+* @num_bytes: Number of bytes to print.
+*/
+void print_opcodes(unsigned char *ptr, int num_bytes);
+
 /**
 * main - Entry point of the program.
 *
