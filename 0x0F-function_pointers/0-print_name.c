@@ -1,6 +1,7 @@
+#include "function_pointers.h"
 #include <stddef.h>
 /**
-* print_name - Entry point
+* print_name - Entry
 * Description: 'print name'
 *
 * @name: char input
