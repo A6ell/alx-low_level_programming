@@ -5,7 +5,7 @@
 *
 * @name: char input
 * @f: function input
-* Return: none
+* Return: nothing
 */
 void print_name(char *name, void (*f)(char *))
 {
