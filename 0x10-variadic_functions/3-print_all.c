@@ -1,11 +1,21 @@
+/**
+	* print_all - prints them out based on the
+	* format string provided.
+	*
+	* @format: specifies the format of the arguments that will be passed to the
+	* function.
+	*/
 #include <stdarg.h>
 #include <stdio.h>
 
-void print_all(const char * const format, ...)
+void print_all(const char *const format, ...)
 {
 	int i = 0;
+
 	char *s;
+
 	va_list args;
+
 	va_start(args, format);
 
 	while (format && format[i])
