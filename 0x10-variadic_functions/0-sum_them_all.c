@@ -1,12 +1,11 @@
+#include <stdarg.h>
 /**
 	* sum_them_all - calculates the sum of a variable number of integer arguments.
 	*
 	* @n: The number of integers that will be passed as variable arguments.
 	*
 	* Return: sum of all the integers passed as variable
-	* arguments.
 	*/
-#include <stdarg.h>
 
 int sum_them_all(const unsigned int n, ...)
 {
