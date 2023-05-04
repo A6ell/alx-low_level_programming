@@ -12,7 +12,7 @@ mask = 1UL << ((sizeof(unsigned long int) * 8) - 1);
 /* Handle the base case of n being 0 */
 if (n == 0)
 {
-putchar('0');
+_putchar('0');
 return;
 }
 
@@ -26,7 +26,7 @@ mask >>= 1;
 /* Print the binary representation of n */
 while (mask != 0)
 {
-putchar((n & mask) ? '1' : '0');
+_putchar((n & mask) ? '1' : '0');
 mask >>= 1;
 }
 }
