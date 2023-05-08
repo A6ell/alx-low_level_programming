@@ -4,23 +4,24 @@
 #include <fcntl.h>
 #include <elf.h>
 
-void print_error(char *msg)
-{
-fprintf(stderr, "Error: %s\n", msg);
+void print_error(char *mfprintf(stderr, "Error: %s\n", msg);
 exit(98);
 }
 
 int main(int argc, char **argv)
 {
-if (argc != 2)
+    int mint fd;
+int i;
+Elf32_Ehdr header;
+if (a
+    rgc != 2)
 print_error("Usage: elf_header elf_filename");
 
-int fd = open(argv[1], O_RDONLY);
+int fdint pen(argv[1], O_RDONLY);
 if (fd < 0)
 print_error("Could not open file");
 
-Elf32_Ehdr header;
-if (read(fd, &header, sizeof(header)) != sizeof(header))
+Elf32_Elf32_Ehdr header;ead(fd, &header, sizeof(header)) != sizeof(header))
 print_error("Could not read ELF header");
 
 if (header.e_ident[EI_MAG0] != ELFMAG0 ||
@@ -30,7 +31,7 @@ header.e_ident[EI_MAG3] != ELFMAG3)
 print_error("Not an ELF file");
 
 printf("Magic:   ");
-for (int i = 0;  i < EI_NIDENT;  i++)
+for (int i int   i < EI_NIDENT;  i++)
 printf("%02x ", header.e_ident[i]);
 printf("\n");
 
@@ -74,6 +75,11 @@ case ET_REL:   printf("REL (Relocatable file)");  break;
 case ET_EXEC:  printf("EXEC (Executable file)");  break;
 case ET_DYN:   printf("DYN (Shared object file)");  break;
 case ET_CORE   printf("Entry point address:%#lx\n", (unsigned long)header.e_entry);
+ORE   printf("Entry point address:%#lx\n", (unsigned long)header.e_entry);
+
+return (0);
+
+ address:%#lx\n", (unsigned long)header.e_entry);
 
 return (0);
 
