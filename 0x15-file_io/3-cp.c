@@ -1,4 +1,5 @@
-/*** main - Entry point. Copies the content of a file to another file
+/**
+* main - Entry point. Copies the content of a file to another file
 * Return: 0 on success, otherwise 97, 98, 99, or 100 on error
 */
 
@@ -66,9 +67,4 @@ exit(100);
 }
 
 return (0);
-ose fd %d\n", fd_to);
-        exit(100);
-    }
-
-    return (0);
 }
