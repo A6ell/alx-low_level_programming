@@ -1,10 +1,10 @@
 /**
- * read_textfile - Reads text file and prints contents to standard output.
- * @filename: Pointer to a null-terminated string.
- * @letters: Number of bytes to read and print.
- *
- * Return: If successful, the number of bytes read and printed. Otherwise, 0.
- */
+* read_textfile - Reads text file and prints contents to standard output.
+* @filename: Pointer to a null-terminated string.
+* @letters: Number of bytes to read and print.
+*
+* Return: If successful, the number of bytes read and printed. Otherwise, 0.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,7 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
 char *buffer;
-ssize_t bytes_read, bytes_written;
+ssize_t bytes_read, i;
 
 if (!filename)
 return (0);
@@ -37,12 +37,11 @@ return (0);
 }
 
 buffer[bytes_read] = '\0';
-bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
+for (i = 0;  i < bytes_read;  i++)
+putchar(buffer[i]);
+
 free(buffer);
 close(fd);
-
-if (bytes_written != bytes_read)
-return (0);
 
 return (bytes_read);
 }
