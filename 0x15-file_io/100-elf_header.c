@@ -1,11 +1,11 @@
 /**
- * main - entry point
- *
- * @argc: the number of arguments passed to the program
- * @argv: an array of strings containing the arguments passed to the program
- *
- * Return: 0 on success, 98 on failure
- */
+* main - entry point
+*
+* @argc: the number of arguments passed to the program
+* @argv: an array of strings containing the arguments passed to the program
+*
+* Return: 0 on success, 98 on failure
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -61,7 +61,7 @@ exit(98);
 
 printf("ELF Header:\n");
 printf("  Magic:   ");
-for (i = 0;  i < EI_NIDENT;  i++)
+for (i = 0;   i < EI_NIDENT;   i++)
 {
 printf("%02x ", hdr->e_ident[i]);
 }
